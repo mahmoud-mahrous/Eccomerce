@@ -1,0 +1,83 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Autumn Dress",
+      "currentPrice": "$40",
+      "sale": true,
+      "oldPrice": "$20",
+      "image": "../images/pexels-ali-pazani-2584269.jpg",
+      "category": "woman",
+      "colors":[
+        "red","green","blue"
+      ],
+      "sizes":[
+        "S","M","L"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jeans Jackit",
+      "currentPrice": "$100",
+      "sale": true,
+      "oldPrice": "$1200",
+      "image": "../images/man1.jpg",
+      "category": "man",
+      "colors":[
+        "red","green","blue"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Gray Shirt",
+      "currentPrice": "$70",
+      "sale": true,
+      "oldPrice": "$20",
+      "image": "../images/pexels-ali-pazani-2681751.jpg",
+      "category": "woman",
+      "colors":[
+        "red","green","blue"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Leather Coat",
+      "currentPrice": "$60",
+      "sale": true,
+      "oldPrice": "$20",
+      "image": "../images/pexels-ali-pazani-2737004.jpg",
+      "category": "woman",
+      "colors":[
+        "red","green","blue"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "T-Shirt",
+      "currentPrice": "$100",
+      "sale": true,
+      "oldPrice": "$120",
+      "image": "../images/man2.jpg",
+      "category": "man",
+      "colors":[
+        "red","green","blue"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Winter T-Shirt",
+      "currentPrice": "$200",
+      "sale": true,
+      "oldPrice": "$120",
+      "image": "../images/man3.jpg",
+      "category": "man",
+      "colors":[
+        "red","green","blue"
+      ]
+    }
+  ],
+  "cart": [
+
+  ],
+  "checkOut": []
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="css/product-details.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white px-0">
+    <div class="container">
+      <a class="navbar-brand px-0 mx-0" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">All Collection</a>
+              <a class="dropdown-item" href="#">Winter</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Discount</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Most wanted</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Arrival</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Brands</a>
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0">
+          <a href="cart.html" class="btn btn-outline-dark mx-2 my-2 my-sm-0" type="submit"><i
+              class="fa-solid fa-cart-shopping"></i></a>
+          <a class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="productDetails">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- Product Image -->
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-12 mb-3">
+              <div id="mainImgDiv" class="mainImgDiv"
+                data-url="./images/1514474020-tips-for-aspiring-fashion-models.jpg"></div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+              <div class="sliderImgDiv slider1"></div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+              <div class="sliderImgDiv slider2"></div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+              <div class="sliderImgDiv slider3"></div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6 mt-3">
+              <div class="sliderImgDiv slider4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Product Details-->
+          <div class="productDetail py-3">
+            <h1 id="productName">Blezeer Jacket</h1>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <i class="fa-solid fa-star-half-stroke checked"></i>
+            <span class="ml-2">(4,9)</span>
+            <p id="productPrice">$ 80.00</p>
+            <hr class="my-3">
+            <form>
+              <div class="row">
+                <div class="col-6">
+                  <label class="py-2">Aviliable Sizes :</label>
+                  <div>
+                    <div class="radio-inputs">
+                      <label class="radio">
+                        <input type="radio" checked value="S" name="size" checked="">
+                        <span class="size">S</span>
+                      </label>
+                      <label class="radio">
+                        <input type="radio" value="M"  name="size">
+                        <span class="size">M</span>
+                      </label>
+                          
+                      <label class="radio">
+                        <input type="radio" value="L"  name="size">
+                        <span class="size">L</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <label class="py-2">Aviliable Colors :</label>
+                  <div class="colors">
+                    <ul id="colorsUl">
+                     
+                      
+                      
+                    </ul> 
+                  </div> 
+                </div>
+              </div>
+              <hr class="my-3">
+                <div class="row justify-content-center align-items-end">
+                  <div class="col-6 ">
+                    <label class="py-2">Quantity  : </label>
+                    <div class="d-flex" style="max-width: 200px">
+                      <button class="btn btn-dark px-3 me-2 defult"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                      </button>
+    
+                      <div class="form-outline mx-2">
+                          <input id="quantity" min="1" name="quantity"  value="1" type="number"
+                              class="form-control quantity text-center" />
+                      </div>
+    
+                      <button class="btn btn-dark px-3 me-2 defult"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                      </button>
+                  </div>
+                  </div>
+                  <div class="col-6">
+                    <button id="addBtn" class="btn btn-dark">Add To Card</button>
+                  </div>
+                </div>  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-area footer--light">
+    <div class="footer-big">
+      <!-- start .container -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-widget">
+              <div class="widget-about">
+                <img src="http://placehold.it/250x80" alt="" class="img-fluid" />
+                <p>
+                  Specializes in providing high-quality , stylish products for
+                  your wardrobe
+                </p>
+                <!-- <ul class="contact-details">
+                      <li>
+                        <span class="icon-earphones"></span> Call Us:
+                        <a href="tel:344-755-111">344-755-111</a>
+                      </li>
+                      <li>
+                        <span class="icon-envelope-open"></span>
+                        <a href="mailto:support@aazztech.com">support@aazztech.com</a>
+                      </li>
+                    </ul> -->
+              </div>
+            </div>
+            <!-- Ends: .footer-widget -->
+          </div>
+          <!-- end /.col-md-4 -->
+          <div class="col-md-3 col-sm-4">
+            <div class="footer-widget">
+              <div class="footer-menu footer-menu--1">
+                <h4 class="footer-widget-title">SHOP</h4>
+                <ul>
+                  <li>
+                    <a href="#">All Collections</a>
+                  </li>
+                  <li>
+                    <a href="#">Winter Edition</a>
+                  </li>
+                  <li>
+                    <a href="#">Discount</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end /.footer-menu -->
+            </div>
+            <!-- Ends: .footer-widget -->
+          </div>
+          <!-- end /.col-md-3 -->
+
+          <div class="col-md-3 col-sm-4">
+            <div class="footer-widget">
+              <div class="footer-menu">
+                <h4 class="footer-widget-title">OUR COMPANY</h4>
+                <ul>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#">Affiliates</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end /.footer-menu -->
+            </div>
+            <!-- Ends: .footer-widget -->
+          </div>
+          <!-- end /.col-lg-3 -->
+
+          <div class="col-md-3 col-sm-4">
+            <div class="footer-widget">
+              <div class="footer-menu no-padding">
+                <h4 class="footer-widget-title">SUPPORT</h4>
+                <ul>
+                  <li>
+                    <a href="#">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms &amp; Conditions</a>
+                  </li>
+                  <li>
+                    <a href="#">Buyers Faq</a>
+                  </li>
+                  <li>
+                    <a href="#">Sellers Faq</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end /.footer-menu -->
+            </div>
+            <!-- Ends: .footer-widget -->
+          </div>
+          <!-- Ends: .col-lg-3 -->
+        </div>
+        <!-- end /.row -->
+      </div>
+      <!-- end /.container -->
+    </div>
+    <!-- end /.footer-big -->
+
+    <div class="mini-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright-text">
+              <p>
+                © 2018 <a href="#">DigiPro</a>. All rights reserved. Created
+                by
+                <a href="#">AazzTech</a>
+              </p>
+            </div>
+
+            <div id="btnUp" class="go_top">
+              <span class="icon-arrow-up"><i class="fa-solid fa-arrow-up"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/slick-carousel/slick/slick.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="module" src="js/mn.js"></script>
+  <script type="module" src="js/product-details.js"></script>
+</body>
+
+</html>
