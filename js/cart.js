@@ -62,6 +62,7 @@ function displayCartItems() {
       </div>
 
       <hr class="my-4" />
+      
 `;
   }
   document.getElementById("cardBody").innerHTML = container;
@@ -73,6 +74,7 @@ function displayCartItems() {
     btnToCheck.setAttribute("id", "btnToCheck");
     document.getElementById("cardBody").appendChild(btnToCheck);
     btnToCheck.addEventListener("click", () => {
+
       var productS = [];
       for (let i = 0; i < allCartitems.length; i++) {
         let cartItem = {
@@ -87,6 +89,7 @@ function displayCartItems() {
         productS.push(cartItem);
         localStorage.setItem("myCart", JSON.stringify(productS));
       }
+      postToChekOut(productS)
       // window.location.href = `http://${window.location.host}`
     });
   } else {
@@ -122,7 +125,7 @@ function postToChekOut(productS) {
       accept: "application.json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(product),
+    body: JSON.stringify(productS),
   })
     .then((res) => res.json())
     .then((res) => console.log(res));

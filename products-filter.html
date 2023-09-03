@@ -89,102 +89,144 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <div class="form border p-4">
+            <div class="form border">
               <form action="">
-                <div class="accordion" id="accordionExample">
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h2 class="mb-0">
-                        <button
-                          class="btn btn-block text-left"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapseOne"
-                          aria-expanded="true"
-                          aria-controls="collapseOne"
-                        >
+                <aside class="sidebar">
+                  <h1 class="sidebar-heading d-flex justify-content-between">
+                    Filter by :
+                  </h1>
+            
+                  <ul class="filter ul-reset">
+                    <li class="filter-item">
+                      <section class="filter-item-inner">
+                        <h1 class="filter-item-inner-heading minus">
                           Category
-                        </button>
-                      </h2>
-                    </div>
+                        </h1>
+                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                          <div class="filter-attribute-list-inner">
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="category-attribute-1" data-type="category" name="category" value="man" class="filter-attribute-checkbox ib-m">
+                              <label for="category-attribute-1"  class="filter-attribute-label ib-m">
+                                Men
+                              </label>
+                            </li>
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="category-attribute-2" data-type="category" name="category" value="woman" class="filter-attribute-checkbox ib-m">
+                              <label for="category-attribute-2"  class="filter-attribute-label ib-m">
+                                women
+                              </label>
+                            </li>
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="category-attribute-3" data-type="category" name="category" value="kid" class="filter-attribute-checkbox ib-m">
+                              <label for="category-attribute-3"  class="filter-attribute-label ib-m">
+                                Kids
+                              </label>
+                            </li>
+                          </div>
+                        </ul>
+                      </section>
+                    </li>
 
-                    <div
-                      id="collapseOne"
-                      class="collapse show"
-                      aria-labelledby="headingOne"
-                      data-parent="#accordionExample"
-                    >
-                      <div class="card-body">
-                        <div class="form-group my-1">
-                          <label for="category1"
-                            ><input
-                              type="checkbox"
-                              class="mr-2"
-                              value="men"
-                              name="category"
-                              id="category1"
-                            />Men</label
-                          >
-                        </div>
-                        <div class="form-group my-1">
-                          <label for="category2"
-                            ><input
-                              type="checkbox"
-                              class="mr-2"
-                              value="women"
-                              name="category"
-                              id="category2"
-                            />Women</label
-                          >
-                        </div>
-                        <div class="form-group my-1">
-                          <label for="category3"
-                            ><input
-                              type="checkbox"
-                              class="mr-2"
-                              value="casual"
-                              name="category"
-                              id="category3"
-                            />Casual</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion" id="accordionExample2">
-                  <div class="card">
-                    <div class="card-header" id="headingOne">
-                      <h2 class="mb-0">
-                        <button
-                          class="btn btn-block text-left"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#collapsetwo"
-                          aria-expanded="true"
-                          aria-controls="collapsetwo"
-                        >
-                          Category
-                        </button>
-                      </h2>
-                    </div>
+                    <li class="filter-item">
+                      <section class="filter-item-inner">
+                        <h1 class="filter-item-inner-heading minus">
+                          color
+                        </h1>
+                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                          <div class="filter-attribute-list-inner">
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="color-attribute-1" data-type="color" name="color" value="white" class="filter-attribute-checkbox ib-m">
+                              <label for="color-attribute-1"  class="filter-attribute-label ib-m">
+                                White
+                              </label>
+                            </li>
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="color-attribute-2" data-type="color" name="color" value="red" class="filter-attribute-checkbox ib-m">
+                              <label for="color-attribute-2"  class="filter-attribute-label ib-m">
+                                red
+                              </label>
+                            </li>
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="color-attribute-3" data-type="color" name="color" value="blue" class="filter-attribute-checkbox ib-m">
+                              <label for="color-attribute-3"  class="filter-attribute-label ib-m">
+                                blue
+                              </label>
+                            </li>
+                      
+                          </div>
+                        </ul>
+                      </section>
+                    </li>
+            
+                    <li class="filter-item ">
+                      <section class="filter-item-inner">
+                        <h1 class="filter-item-inner-heading minus">
+                          Size
+                        </h1>
+                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                          <div class="filter-attribute-list-inner">
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="size-attribute-1" data-type="size" name="size" value="S" class="filter-attribute-checkbox ib-m">
+                              <label for="size-attribute-1" class="filter-attribute-label ib-m">
+                                Small
+                              </label>
+                            </li>
+                           
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="size-attribute-2" data-type="size" name="size" value="M" class="filter-attribute-checkbox ib-m">
+                              <label for="size-attribute-2" class="filter-attribute-label ib-m">
+                                Medium
+                              </label>
+                            </li>
 
-                    <div
-                      id="collapsetwo"
-                      class="collapse show"
-                      aria-labelledby="headingtwo"
-                      data-parent="#accordionExample2"
-                    >
-                      <div class="card-body">
-                        Some placeholder content for the first accordion panel.
-                        This panel is shown by default, thanks to the
-                        <code>.show</code> class.
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="size-attribute-3" data-type="size" name="size" value="L" class="filter-attribute-checkbox ib-m">
+                              <label for="size-attribute-3" class="filter-attribute-label ib-m">
+                                Large
+                              </label>
+                            </li>
+                       
+                          </div>
+                        </ul>
+                      </section>
+                    </li>
+            
+                    <li class="filter-item ">
+                      <section class="filter-item-inner">
+                        <h1 class="filter-item-inner-heading minus">
+                          Brand
+                        </h1>
+                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                          <div class="filter-attribute-list-inner">
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="brand-attribute-1" data-type="brand" name="brand" value="adidas" class="filter-attribute-checkbox ib-m">
+                              <label for="brand-attribute-1" class="filter-attribute-label ib-m">
+                                Adidas
+                              </label>
+                            </li>
+                            <li class="filter-attribute-item">
+                              <input type="checkbox" id="brand-attribute-2" data-type="brand" name="brand" value="nike" class="filter-attribute-checkbox ib-m">
+                              <label for="brand-attribute-2" class="filter-attribute-label ib-m">
+                                Nike
+                              </label>
+                            </li>
+                       
+                          </div>
+                        </ul>
+                      </section>
+                    </li>
+                    
+                  </ul>
+                </aside>
               </form>
             </div>
+          </div>
+          <div class="col-md-9">
+           <div id="filteredProductsItems">
+            <div class="row " id="filtered">
+             
+            </div>
+           </div>
           </div>
         </div>
       </div>
@@ -326,6 +368,7 @@
     <script src="node_modules/slick-carousel/slick/slick.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="module" src="js/mn.js"></script>
+    <script type="module"  src="js/apiFetch.js"></script>
     <script type="module" src="js/products-filter.js"></script>
   </body>
 </html>

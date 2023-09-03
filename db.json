@@ -8,12 +8,16 @@
       "oldPrice": "$20",
       "image": "../images/pexels-ali-pazani-2584269.jpg",
       "category": "woman",
-      "colors":[
-        "red","green","blue"
+      "colors": [
+        "green",
+        "blue"
       ],
-      "sizes":[
-        "S","M","L"
-      ]
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "brand": "adidas"
     },
     {
       "id": "2",
@@ -23,9 +27,13 @@
       "oldPrice": "$1200",
       "image": "../images/man1.jpg",
       "category": "man",
-      "colors":[
-        "red","green","blue"
-      ]
+      "colors": [
+        "white",
+        "green",
+        "blue"
+      ],
+      "sizes": [],
+      "brand": "adidas"
     },
     {
       "id": "3",
@@ -35,9 +43,17 @@
       "oldPrice": "$20",
       "image": "../images/pexels-ali-pazani-2681751.jpg",
       "category": "woman",
-      "colors":[
-        "red","green","blue"
-      ]
+      "colors": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "brand": "adidas"
     },
     {
       "id": "4",
@@ -47,9 +63,17 @@
       "oldPrice": "$20",
       "image": "../images/pexels-ali-pazani-2737004.jpg",
       "category": "woman",
-      "colors":[
-        "red","green","blue"
-      ]
+      "colors": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "brand": "adidas"
     },
     {
       "id": "5",
@@ -59,9 +83,17 @@
       "oldPrice": "$120",
       "image": "../images/man2.jpg",
       "category": "man",
-      "colors":[
-        "red","green","blue"
-      ]
+      "colors": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "brand": "adidas"
     },
     {
       "id": "6",
@@ -71,13 +103,27 @@
       "oldPrice": "$120",
       "image": "../images/man3.jpg",
       "category": "man",
-      "colors":[
-        "red","green","blue"
-      ]
+      "colors": [
+        "red",
+        "green",
+        "blue"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "brand": ""
     }
   ],
-  "cart": [
-
-  ],
-  "checkOut": []
+  "cart": [],
+  "checkOut": [
+    [
+      {
+        "name": "Gray Shirt",
+        "currentPrice": "$70",
+        "image": "../images/pexels-ali-pazani-2681751.jpg",
+        "number": "4"
+      }
+    ]
+  ]
 }

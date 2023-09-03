@@ -1,53 +1,138 @@
-.filter {
+
+
+/* form elements */
+
+label {
+	display: block;
 }
-.mt-5 {
+
+select,
+textarea,
+input {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
 }
-.col-md-3 {
+
+input[type=submit] {
+	cursor: pointer;
 }
-.form {
+
+
+
+
+
+/* inline block */
+
+.ib {
+	display: inline-block;
+	zoom: 1;
+	display: inline;
+	vertical-align: top;
 }
-.border {
+
+.ib-m {
+	display: inline-block;
+	zoom: 1;
+	display: inline;
+	vertical-align: middle;
 }
-.p-4 {
+
+
+/* ul-reset */
+
+.ul-reset {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
 }
-.form-group {
+
+
+/* global classes */
+
+
+/* wrapper */
+
+.wrapper {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
 }
-.d-flex {
+
+
+.sidebar-heading {
+	padding: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #eee;
+	font-size: 1.6em;
 }
-.justify-content-between {
+
+.filter-item {
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
 }
-.align-items-center {
+
+.filter-item-inner {
+	border-bottom: 1px solid #eee;
 }
-.bg-light {
+
+.filter-item-inner-heading {
+	position: relative;
+	padding: 10px;
+	padding-right: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	cursor: pointer;
 }
-.p-3 {
+
+.filter-item-inner-heading.minus:after,
+.filter-item-inner-heading.plus:after {
+	position: absolute;
+	top: 33%;
+	right: 7.5%;
+	font-size: .6em;
 }
-.mainSlideDown {
+
+.filter-item-inner-heading.minus:after {
+	content: "▲";
 }
-.m-0 {
+
+.filter-item-inner-heading.plus:after {
+	content: "▼";
 }
-.fa-solid {
+
+.filter-attribute-list {
+	overflow: hidden;
 }
-.inputsDiv{
-	display: none;
+
+.filter-attribute-list-inner {
+	padding: 0 10px 15px;
 }
-.fa-plus {
+
+.filter-attribute-item {
+	padding-left: 10px;
+	margin-top: 5px;
 }
-.maisSlideDownMenu {
-	display: none;
-	height: auto;
+
+.filter-attribute-item:first-child {
+	margin-top: 0;
 }
-.px-4 {
-}
-.py-3 {
-}
-.slideDown {
-}
-.slideDownMenu {
-}
-.pl-5 {
-}
-.form-check-label {
-}
-.form-check-input {
+
+
+.productImg img
+{
+    object-fit:  fill;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+
 }
