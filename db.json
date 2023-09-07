@@ -125,5 +125,55 @@
         "number": "4"
       }
     ]
+  ],
+  "users": [
+    {
+      "firstName": "mahmoud",
+      "lastName": "mahe",
+      "email": "mahmoudmahrous0707@gmail.com",
+      "password": "Mmmmmmmm2",
+      "id": 1,
+      "rule": "admin",
+      "cart":[]
+    },
+    {
+      "firstName": "mahmoud",
+      "lastName": "mahe",
+      "email": "mahmoudmahrous07@gmail.com",
+      "password": "MMMMMMMM",
+      "id": 2,
+      "rule": "user"
+    },
+    {
+      "firstName": "mm",
+      "lastName": "aa",
+      "email": "mahmoudmahrous070sss7@gmail.com",
+      "password": "Mmahmou4",
+      "id": 3
+    },
+    {
+      "firstName": "mm",
+      "lastName": "ss",
+      "email": "mahmoudmahrous0707@itrax.software",
+      "password": "Mmmmmmmmmm4",
+      "rule": "user",
+      "id": 4
+    },
+    {
+      "firstName": "mmm",
+      "lastName": "aaa",
+      "email": "madddhmoudmahrous07077@gmail.com",
+      "password": "Mmmmmmmmm4",
+      "rule": "user",
+      "id": 5
+    },
+    {
+      "firstName": "bb",
+      "lastName": "aa",
+      "email": "eelking58@yahoo.com",
+      "password": "Mmmmmmmm5",
+      "rule": "user",
+      "id": 6
+    }
   ]
 }

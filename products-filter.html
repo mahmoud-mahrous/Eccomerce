@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/products-filter.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
@@ -14,7 +14,7 @@
   <body>
     <nav
       id="navbar"
-      class="navbar navbar-expand-lg mainNav navbar-light bg-white px-0 w-100"
+      class="navbar navbar-expand-lg navbar-light bg-white position-fixed px-0"
     >
       <div class="container">
         <a class="navbar-brand px-0 mx-0" href="#">Navbar</a>
@@ -64,17 +64,7 @@
               <a class="nav-link" href="#">Brands</a>
             </li>
           </ul>
-          <div class="my-2 my-lg-0">
-            <a
-              href="cart.html"
-              class="btn btn-outline-dark mx-2 my-2 my-sm-0"
-              type="submit"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-            <a class="btn btn-outline-dark my-2 my-sm-0" type="submit"
-              ><i class="fa-solid fa-user"></i
-            ></a>
-          </div>
+          <div class="my-2 my-lg-0" id="navBarBtns"></div>
         </div>
       </div>
     </nav>
@@ -84,35 +74,68 @@
         <div class="row">
           <div class="col-md-3">
             <div class="form border">
-              <form action="" class="w-100">
+              <form action="">
                 <aside class="sidebar">
                   <h1 class="sidebar-heading d-flex justify-content-between">
                     Filter by :
                   </h1>
-            
+
                   <ul class="filter ul-reset">
                     <li class="filter-item">
                       <section class="filter-item-inner">
                         <h1 class="filter-item-inner-heading minus">
                           Category
                         </h1>
-                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                        <ul
+                          class="filter-attribute-list ul-reset"
+                          style="display: none"
+                        >
                           <div class="filter-attribute-list-inner">
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="category-attribute-1" data-type="category" name="category" value="man" class="filter-attribute-checkbox ib-m">
-                              <label for="category-attribute-1"  class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="category-attribute-1"
+                                data-type="category"
+                                name="category"
+                                value="man"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="category-attribute-1"
+                                class="filter-attribute-label ib-m"
+                              >
                                 Men
                               </label>
                             </li>
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="category-attribute-2" data-type="category" name="category" value="woman" class="filter-attribute-checkbox ib-m">
-                              <label for="category-attribute-2"  class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="category-attribute-2"
+                                data-type="category"
+                                name="category"
+                                value="woman"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="category-attribute-2"
+                                class="filter-attribute-label ib-m"
+                              >
                                 women
                               </label>
                             </li>
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="category-attribute-3" data-type="category" name="category" value="kid" class="filter-attribute-checkbox ib-m">
-                              <label for="category-attribute-3"  class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="category-attribute-3"
+                                data-type="category"
+                                name="category"
+                                value="kid"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="category-attribute-3"
+                                class="filter-attribute-label ib-m"
+                              >
                                 Kids
                               </label>
                             </li>
@@ -123,104 +146,181 @@
 
                     <li class="filter-item">
                       <section class="filter-item-inner">
-                        <h1 class="filter-item-inner-heading minus">
-                          color
-                        </h1>
-                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                        <h1 class="filter-item-inner-heading minus">color</h1>
+                        <ul
+                          class="filter-attribute-list ul-reset"
+                          style="display: none"
+                        >
                           <div class="filter-attribute-list-inner">
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="color-attribute-1" data-type="color" name="color" value="white" class="filter-attribute-checkbox ib-m">
-                              <label for="color-attribute-1"  class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="color-attribute-1"
+                                data-type="color"
+                                name="color"
+                                value="white"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="color-attribute-1"
+                                class="filter-attribute-label ib-m"
+                              >
                                 White
                               </label>
                             </li>
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="color-attribute-2" data-type="color" name="color" value="red" class="filter-attribute-checkbox ib-m">
-                              <label for="color-attribute-2"  class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="color-attribute-2"
+                                data-type="color"
+                                name="color"
+                                value="red"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="color-attribute-2"
+                                class="filter-attribute-label ib-m"
+                              >
                                 red
                               </label>
                             </li>
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="color-attribute-3" data-type="color" name="color" value="blue" class="filter-attribute-checkbox ib-m">
-                              <label for="color-attribute-3"  class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="color-attribute-3"
+                                data-type="color"
+                                name="color"
+                                value="blue"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="color-attribute-3"
+                                class="filter-attribute-label ib-m"
+                              >
                                 blue
                               </label>
                             </li>
-                      
                           </div>
                         </ul>
                       </section>
                     </li>
-            
-                    <li class="filter-item ">
+
+                    <li class="filter-item">
                       <section class="filter-item-inner">
-                        <h1 class="filter-item-inner-heading minus">
-                          Size
-                        </h1>
-                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                        <h1 class="filter-item-inner-heading minus">Size</h1>
+                        <ul
+                          class="filter-attribute-list ul-reset"
+                          style="display: none"
+                        >
                           <div class="filter-attribute-list-inner">
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="size-attribute-1" data-type="size" name="size" value="S" class="filter-attribute-checkbox ib-m">
-                              <label for="size-attribute-1" class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="size-attribute-1"
+                                data-type="size"
+                                name="size"
+                                value="S"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="size-attribute-1"
+                                class="filter-attribute-label ib-m"
+                              >
                                 Small
                               </label>
                             </li>
-                           
+
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="size-attribute-2" data-type="size" name="size" value="M" class="filter-attribute-checkbox ib-m">
-                              <label for="size-attribute-2" class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="size-attribute-2"
+                                data-type="size"
+                                name="size"
+                                value="M"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="size-attribute-2"
+                                class="filter-attribute-label ib-m"
+                              >
                                 Medium
                               </label>
                             </li>
 
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="size-attribute-3" data-type="size" name="size" value="L" class="filter-attribute-checkbox ib-m">
-                              <label for="size-attribute-3" class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="size-attribute-3"
+                                data-type="size"
+                                name="size"
+                                value="L"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="size-attribute-3"
+                                class="filter-attribute-label ib-m"
+                              >
                                 Large
                               </label>
                             </li>
-                       
                           </div>
                         </ul>
                       </section>
                     </li>
-            
-                    <li class="filter-item ">
+
+                    <li class="filter-item">
                       <section class="filter-item-inner">
-                        <h1 class="filter-item-inner-heading minus">
-                          Brand
-                        </h1>
-                        <ul class="filter-attribute-list ul-reset" style="display: none;">
+                        <h1 class="filter-item-inner-heading minus">Brand</h1>
+                        <ul
+                          class="filter-attribute-list ul-reset"
+                          style="display: none"
+                        >
                           <div class="filter-attribute-list-inner">
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="brand-attribute-1" data-type="brand" name="brand" value="adidas" class="filter-attribute-checkbox ib-m">
-                              <label for="brand-attribute-1" class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="brand-attribute-1"
+                                data-type="brand"
+                                name="brand"
+                                value="adidas"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="brand-attribute-1"
+                                class="filter-attribute-label ib-m"
+                              >
                                 Adidas
                               </label>
                             </li>
                             <li class="filter-attribute-item">
-                              <input type="checkbox" id="brand-attribute-2" data-type="brand" name="brand" value="nike" class="filter-attribute-checkbox ib-m">
-                              <label for="brand-attribute-2" class="filter-attribute-label ib-m">
+                              <input
+                                type="checkbox"
+                                id="brand-attribute-2"
+                                data-type="brand"
+                                name="brand"
+                                value="nike"
+                                class="filter-attribute-checkbox ib-m"
+                              />
+                              <label
+                                for="brand-attribute-2"
+                                class="filter-attribute-label ib-m"
+                              >
                                 Nike
                               </label>
                             </li>
-                       
                           </div>
                         </ul>
                       </section>
                     </li>
-                    
                   </ul>
                 </aside>
               </form>
             </div>
           </div>
           <div class="col-md-9">
-           <div id="filteredProductsItems">
-            <div class="row justify-content-center align-items-center" id="filtered">
-             
+            <div id="filteredProductsItems">
+              <div class="row" id="filtered"></div>
             </div>
-           </div>
           </div>
         </div>
       </div>
@@ -358,10 +458,11 @@
     </footer>
 
     <script src="js/jquery.js"></script>
-    <script  src="js/popper.min.js"></script> 
+    <script src="js/popper.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/mn.js"></script>
-    <script type="module" src="js/products-filter.js"></script>
+    <script src="js/apiFetch.js"></script>
+    <script src="js/products-filter.js"></script>
   </body>
 </html>

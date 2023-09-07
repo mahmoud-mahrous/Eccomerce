@@ -71,7 +71,7 @@ $(function () {
     let container = "";
     for (const product of filteredProducts) {
       container += `
-      <div class="col-lg-4 col-md-6 col-sm-6 col-9">
+      <div class="col-md-4">
       <div class=" m-3 product" style="display: none;">
         <div class="productImg">
           <img value="${product.image}" data-id="${product.id}" src="${product.image}" class="img-fluid" alt="">

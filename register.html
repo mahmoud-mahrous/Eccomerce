@@ -17,14 +17,27 @@
  
 
   
-  
-<section class="login bg-dark vh-100 mt-0 py-4">
+<section class="register bg-dark vh-100 mt-0 py-4">
   <div class="container mt-5">
     <div class="alert alert-danger" id="emailFoundAlert" style="display: none;" role="alert">
-      Email or Password is incorrect.
+        Email Exists.
       </div>
-<form action="" id="loginForm">
-
+      
+<form action="" id="registerForm">
+  <div class="form-group my-5">
+    <label for="firstNameInput" class="text-white">First Name :</label>
+    <input type="text" name="" id="firstNameInput" class="form-control ">
+    <div class="alert alert-danger mt-2" id="firstNameInputAlert" style="display: none;" role="alert">
+        Frist Name must be letters only
+      </div>
+  </div>
+  <div class="form-group my-5">
+    <label for="lastNameInput" class="text-white">last Name :</label>
+    <input type="text" name="" id="lastNameInput" class="form-control ">
+    <div class="alert alert-danger mt-2" id="lastNameInputAlert" style="display: none;" role="alert">
+        Frist Name must be letters only
+      </div>
+  </div>
   <div class="form-group my-5">
     <label for="email" class="text-white">Email :</label>
     <input type="email" name="" id="email" class="form-control ">
@@ -40,12 +53,11 @@
       </div>
   </div>
   <div class="form-group my-5">
-    <button class="btn btn-info" type="submit">Login</button>
+    <button class="btn btn-info" type="submit">Register</button>
   </div>
 </form>
   </div>
 </section>
-
 
 
 
@@ -54,7 +66,7 @@
   <script src="js/slick.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script  src="js/mn.js"></script>
-  <script src="js/login.js"></script>
+  <script src="js/register.js"></script>
 </body>
 
 </html>

@@ -15,8 +15,9 @@
 <body>
   <div id="load"></div>
 
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white px-0">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white position-fixed px-0">
     <div class="container">
+
       <a class="navbar-brand px-0 mx-0" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,18 +45,17 @@
             <a class="nav-link" href="#">New Arrival</a>
           </li>
 
+
           <li class="nav-item">
             <a class="nav-link" href="#">Brands</a>
           </li>
+
         </ul>
-        <div class="my-2 my-lg-0">
-          <a href="cart.html" class="btn btn-outline-dark mx-2 my-2 my-sm-0" type="submit"><i
-              class="fa-solid fa-cart-shopping"></i></a>
-          <a class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa-solid fa-user"></i></a>
+        <div class="my-2 my-lg-0" id="navBarBtns">         
         </div>
       </div>
     </div>
-  </nav>
+    </nav>
 
   <section class="productDetails">
     <div class="container">
@@ -289,8 +289,8 @@
   <script  src="js/popper.min.js"></script> 
   <script src="js/slick.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="module" src="js/mn.js"></script>
-  <script type="module" src="js/product-details.js"></script>
+  <script src="js/mn.js"></script>
+  <script src="js/product-details.js"></script>
 </body>
 
 </html>
